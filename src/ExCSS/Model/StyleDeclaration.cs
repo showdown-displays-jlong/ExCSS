@@ -1136,10 +1136,34 @@ namespace ExCSS
             set => SetPropertyValue(PropertyNames.Margin, value);
         }
 
+        public string MarginBlockEnd
+        {
+            get => GetPropertyValue(PropertyNames.MarginBlockEnd);
+            set => SetPropertyValue(PropertyNames.MarginBlockEnd, value);
+        }
+
+        public string MarginBlockStart
+        {
+            get => GetPropertyValue(PropertyNames.MarginBlockStart);
+            set => SetPropertyValue(PropertyNames.MarginBlockStart, value);
+        }
+
         public string MarginBottom
         {
             get => GetPropertyValue(PropertyNames.MarginBottom);
             set => SetPropertyValue(PropertyNames.MarginBottom, value);
+        }
+
+        public string MarginInlineEnd
+        {
+            get => GetPropertyValue(PropertyNames.MarginInlineEnd);
+            set => SetPropertyValue(PropertyNames.MarginInlineEnd, value);
+        }
+
+        public string MarginInlineStart
+        {
+            get => GetPropertyValue(PropertyNames.MarginInlineStart);
+            set => SetPropertyValue(PropertyNames.MarginInlineStart, value);
         }
 
         public string MarginLeft

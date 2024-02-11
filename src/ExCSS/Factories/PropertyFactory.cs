@@ -243,6 +243,16 @@ namespace ExCSS
             AddLonghand(PropertyNames.MarginTop, () => new MarginTopProperty(), true);
             AddLonghand(PropertyNames.MarginBottom, () => new MarginBottomProperty(), true);
 
+            AddShorthand(PropertyNames.MarginBlock, () => new MarginBlockProperty(),
+                PropertyNames.MarginBlockStart, PropertyNames.MarginBlockEnd);
+            AddLonghand(PropertyNames.MarginBlockStart, () => new MarginBlockStartProperty(), true);
+            AddLonghand(PropertyNames.MarginBlockEnd, () => new MarginBlockEndProperty(), true);
+
+            AddShorthand(PropertyNames.MarginInline, () => new MarginInlineProperty(),
+                PropertyNames.MarginInlineStart, PropertyNames.MarginInlineEnd);
+            AddLonghand(PropertyNames.MarginInlineStart, () => new MarginInlineStartProperty(), true);
+            AddLonghand(PropertyNames.MarginInlineEnd, () => new MarginInlineEndProperty(), true);
+
             AddLonghand(PropertyNames.MaxHeight, () => new MaxHeightProperty(), true);
             AddLonghand(PropertyNames.MaxWidth, () => new MaxWidthProperty(), true);
             AddLonghand(PropertyNames.MinHeight, () => new MinHeightProperty(), true);
